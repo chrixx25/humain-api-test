@@ -12,6 +12,6 @@ con.on('error', () => console.log('error'));
 app.use(express.json());
 
 const humanRouter = require('./routes/human');
-app.use('/human', humanRouter);
+app.use('/api/human', humanRouter);
 
 app.listen(port, () => console.log(`Listening on port ${port}`));
